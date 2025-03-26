@@ -5,57 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Madhyanapu - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --color-primary: #2563eb;
+            --color-text: #fff;
+            --color-muted: #9fa5a5;
+            --color-ui-1: #171717;
+            --color-ui-2: #212121;
+            --font-main: 'Poppins', sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            background: var(--color-ui-1);
+            color: var(--color-text);
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 4rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
 </head>
-<body class="antialiased font-sans bg-background text-foreground min-h-screen flex flex-col items-center justify-center">
-    <div class="max-w-2xl mx-auto px-6 py-12 sm:py-24">
+<body>
+    <header class="text-center py-10 bg-gradient-to-r from-gray-800 to-gray-900">
         <h1 class="text-4xl font-bold">Sagar Madhyanapu</h1>
-        <p class="text-lg text-muted-foreground">Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
-        
-        <section id="about" class="mt-8">
-            <h2 class="text-2xl font-semibold">About Me</h2>
-            <p class="text-muted-foreground">Detail-oriented Computer Science graduate with expertise in cybersecurity, quality assurance, and IT service management. Passionate about system reliability and process optimization.</p>
-        </section>
+        <p class="text-lg text-gray-400">Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
+    </header>
 
-        <section id="skills" class="mt-8">
-            <h2 class="text-2xl font-semibold">Technical Skills</h2>
-            <ul class="list-disc pl-6 text-muted-foreground">
-                <li>Programming: Python, C</li>
-                <li>Web Development: HTML, CSS</li>
-                <li>Databases: SQL (Fundamental Knowledge)</li>
-                <li>Cybersecurity: Security Vulnerability Analysis, Authentication Mechanisms</li>
-                <li>Tools & Frameworks: Jira, ServiceNow, ITIL</li>
-                <li>Quality Assurance & Compliance</li>
-            </ul>
-        </section>
+    <section id="about" class="container">
+        <h2 class="text-2xl font-semibold">About Me</h2>
+        <p class="text-gray-400">Detail-oriented Computer Science graduate with expertise in cybersecurity, quality assurance, and IT service management. Passionate about system reliability and process optimization.</p>
+    </section>
 
-        <section id="projects" class="mt-8">
-            <h2 class="text-2xl font-semibold">Projects</h2>
-            <ul class="list-disc pl-6 text-muted-foreground">
-                <li><strong>Blockchain AI Recommender System</strong> - Integrated AI with blockchain for secure recommendations.</li>
-                <li><strong>Secure Login System</strong> - Developed MFA and encrypted authentication.</li>
-                <li><strong>Personal Portfolio Website</strong> - Built and deployed a responsive portfolio.</li>
-            </ul>
-        </section>
+    <section id="skills" class="container">
+        <h2 class="text-2xl font-semibold">Technical Skills</h2>
+        <ul class="list-disc pl-6 text-gray-400">
+            <li>Programming: Python, C</li>
+            <li>Web Development: HTML, CSS</li>
+            <li>Databases: SQL (Fundamental Knowledge)</li>
+            <li>Cybersecurity: Security Vulnerability Analysis, Authentication Mechanisms</li>
+            <li>Tools & Frameworks: Jira, ServiceNow, ITIL</li>
+            <li>Quality Assurance & Compliance</li>
+        </ul>
+    </section>
 
-        <section id="experience" class="mt-8">
-            <h2 class="text-2xl font-semibold">Internship</h2>
-            <p><strong>Cybersecurity Intern | AICTE (Oct 2021 - Dec 2021)</strong></p>
-            <p class="text-muted-foreground">Worked on security compliance, risk assessment, and vulnerability analysis.</p>
-        </section>
+    <section id="projects" class="container">
+        <h2 class="text-2xl font-semibold">Projects</h2>
+        <ul class="list-disc pl-6 text-gray-400">
+            <li><strong>Blockchain AI Recommender System</strong> - Integrated AI with blockchain for secure recommendations.</li>
+            <li><strong>Secure Login System</strong> - Developed MFA and encrypted authentication.</li>
+            <li><strong>Personal Portfolio Website</strong> - Built and deployed a responsive portfolio.</li>
+        </ul>
+    </section>
 
-        <section id="education" class="mt-8">
-            <h2 class="text-2xl font-semibold">Education</h2>
-            <p><strong>B.Tech in Computer Science Engineering</strong></p>
-            <p class="text-muted-foreground">Siddhartha Institute of Engineering & Technology (2019-2023) | Hyderabad</p>
-        </section>
+    <section id="experience" class="container">
+        <h2 class="text-2xl font-semibold">Internship</h2>
+        <p><strong>Cybersecurity Intern | AICTE (Oct 2021 - Dec 2021)</strong></p>
+        <p class="text-gray-400">Worked on security compliance, risk assessment, and vulnerability analysis.</p>
+    </section>
 
-        <section id="contact" class="mt-8">
-            <h2 class="text-2xl font-semibold">Contact</h2>
-            <p>Email: <a href="mailto:madhyanapusagar@gmail.com" class="text-blue-600">madhyanapusagar@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/sagarmadhyanapu" class="text-blue-600" target="_blank">linkedin.com/in/sagarmadhyanapu</a></p>
-            <p>Phone: 7075032072</p>
-        </section>
-    </div>
+    <section id="education" class="container">
+        <h2 class="text-2xl font-semibold">Education</h2>
+        <p><strong>B.Tech in Computer Science Engineering</strong></p>
+        <p class="text-gray-400">Siddhartha Institute of Engineering & Technology (2019-2023) | Hyderabad</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="text-2xl font-semibold">Contact</h2>
+        <p>Email: <a href="mailto:madhyanapusagar@gmail.com" class="text-blue-400">madhyanapusagar@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sagarmadhyanapu" class="text-blue-400" target="_blank">linkedin.com/in/sagarmadhyanapu</a></p>
+        <p>Phone: 7075032072</p>
+    </section>
+
+    <footer class="text-center py-6 bg-gray-900 text-gray-500">
+        <p>&copy; 2025 Sagar Madhyanapu. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-
