@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar Madhyanapu - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Sagar Madhyanapu</h1>
-        <p>Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
+        <h1 class="fade-in">Sagar Madhyanapu</h1>
+        <p class="fade-in">Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <section id="about">
+    <section id="about" class="slide-in">
         <h2>About Me</h2>
         <p>Detail-oriented and highly motivated Computer Science graduate with a strong foundation in software development, cybersecurity, and quality assurance. Skilled in software testing, process optimization, and compliance analysis to ensure efficiency and security.</p>
     </section>
     
-    <section id="skills">
+    <section id="skills" class="slide-in">
         <h2>Technical Skills</h2>
         <ul>
             <li>Python, C</li>
@@ -29,7 +39,7 @@
         </ul>
     </section>
     
-    <section id="projects">
+    <section id="projects" class="slide-in">
         <h2>Projects</h2>
         <div class="project">
             <h3>Integrating Blockchain with AI for Privacy-Preserving Recommender Systems</h3>
@@ -45,27 +55,29 @@
         </div>
     </section>
     
-    <section id="experience">
+    <section id="experience" class="slide-in">
         <h2>Internship</h2>
         <h3>Cybersecurity Intern | AICTE (Oct 2021 - Dec 2021)</h3>
         <p>Gained hands-on experience in security compliance, data integrity, and risk assessment. Conducted vulnerability assessments and assisted in improving overall cybersecurity posture.</p>
     </section>
     
-    <section id="education">
+    <section id="education" class="slide-in">
         <h2>Education</h2>
         <p><strong>Siddhartha Institute of Engineering & Technology</strong></p>
         <p>B.Tech in Computer Science Engineering (2019-2023) | Hyderabad</p>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="slide-in">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:madhyanapusagar@gmail.com">madhyanapusagar@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/sagarmadhyanapu/" target="_blank">linkedin.com/in/sagarmadhyanapu</a></p>
         <p>Phone: 7075032072</p>
     </section>
     
-    <script src="script.js"></script>
+    <script>
+        gsap.from(".fade-in", { opacity: 0, y: -50, duration: 1, stagger: 0.3 });
+        gsap.from(".slide-in", { opacity: 0, x: -100, duration: 1, stagger: 0.3, scrollTrigger: { trigger: ".slide-in", start: "top 80%" }});
+    </script>
 </body>
 </html>
 
- 
