@@ -3,105 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Madhyanapu - Portfolio</title>
+    <title>Sagar Madhyanapu | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="background-animation"></div>
     <header>
-        <h1 class="fade-in">Sagar Madhyanapu</h1>
-        <p class="fade-in">Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
+        <h1>Sagar Madhyanapu</h1>
+        <p>Computer Science Graduate | Cybersecurity & QA Enthusiast</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about" class="slide-in">
+    <section id="about">
         <h2>About Me</h2>
-        <p>Detail-oriented and highly motivated Computer Science graduate with expertise in software development, cybersecurity, and quality assurance. Passionate about building innovative solutions and ensuring efficiency through rigorous testing and continuous improvement.</p>
+        <p>A Computer Science graduate passionate about Cybersecurity and Quality Assurance, eager to apply technical knowledge in the IT industry.</p>
     </section>
-    
-    <section id="skills" class="slide-in">
-        <h2>Technical Skills</h2>
+
+    <section id="skills">
+        <h2>Skills</h2>
         <ul>
-            <li><i class="fas fa-code"></i> Python, C</li>
-            <li><i class="fas fa-laptop-code"></i> HTML, CSS</li>
-            <li><i class="fas fa-database"></i> SQL (Fundamental Knowledge)</li>
-            <li><i class="fas fa-shield-alt"></i> Security Vulnerability Analysis</li>
-            <li><i class="fas fa-tools"></i> Jira, ServiceNow, ITIL Framework</li>
-            <li><i class="fas fa-check-circle"></i> Quality Assurance & Compliance</li>
+            <li>Python</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Cybersecurity Basics</li>
+            <li>QA Testing</li>
         </ul>
     </section>
     
-    <section id="projects" class="slide-in">
+    <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Integrating Blockchain with AI for Privacy-Preserving Recommender Systems</h3>
-            <p>Developed an AI-powered recommender system integrated with blockchain for secure data utilization, ensuring data privacy and integrity using smart contracts.</p>
-        </div>
-        <div class="project">
-            <h3>Secure Login System (Python & MySQL)</h3>
-            <p>Designed a secure authentication system with MFA and encrypted password storage using bcrypt, implementing role-based access control and security measures.</p>
-        </div>
-        <div class="project">
             <h3>Personal Portfolio Website</h3>
-            <p>Built a fully responsive, animated, and interactive portfolio website to showcase projects, skills, and achievements with a modern UI/UX experience.</p>
+            <p>Built a responsive and interactive portfolio to showcase projects, skills, and achievements.</p>
+            <a href="https://sagarmadhyanapu.github.io/portfolio-website" target="_blank">Live Demo</a>
         </div>
     </section>
     
-    <section id="experience" class="slide-in">
-        <h2>Internship</h2>
-        <h3>Cybersecurity Intern | AICTE (Oct 2021 - Dec 2021)</h3>
-        <p>Gained hands-on experience in security compliance, data integrity, and risk assessment. Conducted vulnerability assessments and assisted in improving overall cybersecurity posture.</p>
-    </section>
-    
-    <section id="education" class="slide-in">
-        <h2>Education</h2>
-        <p><strong>Siddhartha Institute of Engineering & Technology</strong></p>
-        <p>B.Tech in Computer Science Engineering (2019-2023) | Hyderabad</p>
-    </section>
-    
-    <section id="contact" class="slide-in">
+    <section id="contact">
         <h2>Contact</h2>
-        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:madhyanapusagar@gmail.com">madhyanapusagar@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/sagarmadhyanapu/" target="_blank">linkedin.com/in/sagarmadhyanapu</a></p>
-        <p><i class="fas fa-phone"></i> Phone: 7075032072</p>
+        <p>Email: sagarmadhyanapu@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sagarmadhyanapu" target="_blank">linkedin.com/in/sagarmadhyanapu</a></p>
     </section>
-    
-    <script>
-        gsap.from(".fade-in", { opacity: 0, y: -50, duration: 1, stagger: 0.3 });
-        gsap.from(".slide-in", { opacity: 0, x: -100, duration: 1, stagger: 0.3, scrollTrigger: { trigger: ".slide-in", start: "top 80%" }});
 
-        // Background animation using Three.js
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById('background-animation').appendChild(renderer.domElement);
-
-        const geometry = new THREE.SphereGeometry(5, 32, 32);
-        const material = new THREE.MeshBasicMaterial({ color: 0x44aa88 });
-        const sphere = new THREE.Mesh(geometry, material);
-        scene.add(sphere);
-        camera.position.z = 20;
-
-        function animate() {
-            requestAnimationFrame(animate);
-            sphere.rotation.x += 0.01;
-            sphere.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        animate();
-    </script>
+    <footer>
+        <p>&copy; 2025 Sagar Madhyanapu</p>
+    </footer>
 </body>
 </html>
 
